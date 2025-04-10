@@ -35,5 +35,5 @@ jobs:
       - name: Desplegar a AWS Lambda
         run: |
           aws lambda update-function-code \
-            --function-name nuv-test-github - Prueba de concepto \
+            --function-name nuv-test-github - Prueba-de-concepto \
             --zip-file fileb:/lambda1/lambda_to_deploy/lambda.zip
