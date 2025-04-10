@@ -30,10 +30,10 @@ jobs:
           pip install -r requirements.txt -t lambda_to_deploy
           cp nuv-test-github.py lambda_to_deploy
           cd lambda_to_deploy
-          zip -r lambda.zip.zip *
+          zip -r lambda_zip.zip *
       # Despliegue de una lambda ya existente
       - name: Desplegar a AWS Lambda
         run: |
           aws lambda update-function-code \
             --function-name nuv-test-github \
-            --zip-file fileb://lambda1/lambda_to_deploy/lambda.zip
+            --zip-file fileb://lambda1/lambda_to_deploy/lambda_zip.zip
