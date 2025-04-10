@@ -36,4 +36,4 @@ jobs:
         run: |
           aws lambda update-function-code \
             --function-name nuv-test-github \
-            --zip-file fileb:/lambda1/lambda_to_deploy/lambda.zip
+            --zip-file fileb://lambda1/lambda_to_deploy/lambda.zip
