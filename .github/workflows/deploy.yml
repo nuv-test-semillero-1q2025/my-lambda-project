@@ -28,7 +28,7 @@ jobs:
           cd lambda1
           mkdir -p lambda_to_deploy
           pip install -r requirements.txt -t lambda_to_deploy
-          cp nuv-test-github.py lambda_to_deploy
+          cp lambda_function.py lambda_to_deploy
           cd lambda_to_deploy
           zip -r lambda_zip.zip *
       # Despliegue de una lambda ya existente
