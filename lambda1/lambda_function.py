@@ -4,6 +4,7 @@ def lambda_handler(event, context):
     # TODO implement
     print('event')
     print('Hola mundo javier!')
+    print('Hola mundo Juan Daniel!')
           
     return {
         'statusCode': 200,
