@@ -31,7 +31,7 @@ jobs:
           cp nuv-test-github.py lambda_to_deploy
           cd lambda_to_deploy
           zip -r lambda.zip.zip *
-
+      # Despliegue de una lambda ya existente
       - name: Desplegar a AWS Lambda
         run: |
           aws lambda update-function-code \
